@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meant For Good</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://media.istockphoto.com/id/1294989363/photo/opening-book-of-holy-bible-with-text-on-blurred-cross-background.jpg?s=612x612&w=0&k=20&c=QBnff1j14tV0qDTecc_I2bbR8lo95cGRPEAdl7P08Es=') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+        header {
+            text-align: center;
+            padding: 50px;
+			color: #000;
+        }
+		        .menu-btn {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background: #333;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            z-index: 1000;
+        }
+        .sidebar {
+            position: fixed;
+            left: -200px;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background: #333;
+            color: white;
+            transition: left 0.3s;
+            padding-top: 50px;
+            z-index: 999;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            background: #575757;
+        }
+        .sidebar.active {
+            left: 0;
+        }
+        .content {
+            background: rgba(255, 255, 255, 0.7);
+            margin: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: justify;
+			color: #000; /* Makes the article text black */
+        }
+		.links a {
+            display: block;
+            padding: 10px;
+            margin: 5px 0;
+            background: #444;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .links a:hover {
+            background: #575757;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(68, 68, 68, 0.8);
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+	<script>
+        function toggleSidebar() {
+            let sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+    <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+    <div class="sidebar">
+        <a href="articles.html">Back To Articles</a>
+        <a href="#" onclick="toggleSidebar()">Close</a>
+    </div>
+</head>
+    <header>
+        <h1>Meant For Good</h1>
+    </header>
+    <div class="content">
+        <p>“But as for you, you meant evil against me; but God meant it for good, in order to bring it about as it is this day, to save many people alive.” - Genesis 50:20</p>
+        <p>   Starting in Genesis chapter thirty-seven, and ending in chapter fifty of Genesis, the bible describes the life of man named Joseph. Born as one of the many sons of Jacob, named by God as Israel, Joseph was the child favored by his father. Jacob had twelve sons, Reuben Simeon, Levi, Judah, Issachar, Zebulin, Neptali, Dan, Gad, Asher, Joseph, and later in Jacob’s life, Benjamin. Jacob also had multiple daughters, according to Genesis 37:35, as well as chapter Genesis 46:7, but the only daughter mentioned by name is named Dinah, according toGenesis 30:21. Since Joseph was his favorite child, he was given a coat of many colors by his father. This act of favoritism very much angered Joseph’s siblings, which ultimately led them to sell him into slavery. Joseph was brought into Egypt, and sold to a man named Potiphar. Eventually, Joseph worked his way into being one of the most powerful people in Egypt, the only thing separating him from Pharaoh was the throne. Joseph ends up explaining a dream to Pharaoh, and predicts seven years of plenty and seven years of famine. He stored up grain during the years of plenty, and Egypt still had food during the famine. People from around the land would come over to get food, and some of those people ended up being Joseph’s family. Joseph later revealed himself to his family and told his brothers that they meant what they did to him for evil, but God meant it for good.</p>
+        <p>   If they had never sold Joseph into slavery, they probably would have died in the famine, with Joseph not there to decipher the dreams and make sure to store up food. Though his brothers meant only evil for him, God took the evil that they intended, and made it into good. This is good for us today as well, knowing that God can work even the toughest most evil situations to the greater good, as it says in Romans 8:28,</p>
+        <p>“And we know that all things work together for good to those who love God, to those who are the called according to His purpose.”</p>
+        <p>   No matter what is coming our way, God can use what we are going through for good. We can always remember that whatever we are going through or have as well as will go through, all things will work together for the best. And no matter what evil there is in the world, the power of God can always overcome it. God’s power is never limited, he can always work out even the worst things to the greater good. As Ephesians 3:20,</p>
+        <p>“Now to Him who is able to do exceedingly abundantly above all that we ask or think, according to the power that works in us,”</p>
+    </div>
+    <footer>
+        <p>&copy; 2025 Nathan Warren. All rights reserved.</p>
+    </footer>
+</body>
+</html>
